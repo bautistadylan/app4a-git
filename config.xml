@@ -1,14 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?>  
+﻿<?xml version="1.0" encoding="UTF-8"?>  
 
   <widget xmlns ="http://www.w3.org/ns/widgets"
      xmlns:gap = "http://phonegap.com/ns/1.0"
-	 id ="com.phonegap.app4"
+	 id ="com.phonegap.app2"
 	 version ="1.0.0">
 	 
-	 <name> app-4 Dia Internacional De La Madre Tierra </name>
+	 <name> app-4 Dia Internacional de la madre Tierra 22 de abril </name>
 	
 	 <description>
-	   Aplicacion que muestra información sobre el dia Internacional De La Madre Tierra 22 De Abril 
+	   Aplicacion que muestra información sobre el dia internacional de la madre tierra
 	  </description>
 	   
 	  <author href="https://build.phonegap.com" email="bautistagarciadylan@gmail.com">
