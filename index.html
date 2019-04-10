@@ -18,9 +18,32 @@
 <link rel="stylesheet" href="css/sldr.css">
 <link rel="stylesheet" href="css/style.css">
 <script src="js/jsplug.js"></script>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
 </head>
 
-<body>
+<body onLoad="MM_preloadImages('imagenes/Madre_Tierra8.jpg','imagenes/Madre_Tierra12.jpg')">
 <div data-role="page" id="Principal" data-theme="a">
    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
    <h1>Dia Internacional de la madre Tierra 22 de abril</h1>
@@ -82,7 +105,7 @@
             </center>
             <center>      
       <div data-role="main" class="iu-content">
-           <br><br><br><br><br><br><br><br><br>
+           
             <div data-role="collapsible" data-content-theme="false">
             <h1>Realizado por:</h1>
             <h2>Dylan Bautista Garcia</h2>
@@ -93,6 +116,13 @@
             <p>Desarrolla Aplicaciones Móviles</p>
             <h2>Docente:</h2>
             <p>Lic.José Antonio Gómez Hernandez</p>
+           </div>
+           <div data-role="collapsible" data-content-theme="false">
+           <h1>Imagenes sobre la Madre tierra</h1>
+           <h2>Madre Tierra</h2>
+           <div>
+           
+           <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image12','','imagenes/Madre_Tierra10.jpg',1)"><img src="imagenes/Madre_Tierra9.jpg" alt="" width="60%" height="70%" id="Image12"></a> 
            </div>
           </div>
          </center>
@@ -112,19 +142,20 @@
            </div>
            <center>
            <div data-role="main" class="iu-content">
+           
            <p>
            Celebramos el Día Internacional de la Madre Tierra para recordar que el planeta y sus ecosistemas nos dan la vida y el sustento.Con este día, asuimimos, además, la responsabilidad colectiva, como nos recordaba la Declaracion de Río de 1992, fomentar esta armonía con la naturaleza y la Madre Tierra.
            Este día nos brinda también la oportunidad de concienticiar a todos los habitantes del planeta tierra acerca de los problemas que adfectan a la tierra y a las formas de vida que en él se dasarrollan
            
            </p>
-         </div>
+           <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image13','','imagenes/Madre_Tierra12.jpg',1)"><img src="imagenes/Madre_Tierra11.jpg" alt="" width="60%" height="70%" id="Image13"></a> </div>
          </center>
          <center>
             
              <div data-role="main" class="ui-content" align="center">
-             <div style="width:30%">
+             <div style="width:30%;">
               <ul data-role="controlgroup" data-type="vertical" data-theme="a">
-              <li class="ui_first-child ul-last-child">
+              <li class="ui_first-child ui-last-child">
               <a href="https://www.gob.mx/sipinna/agenda/dia-internacional-de-la-madre-tierra-153141?idiom=es"target="_self" data-role="button">
               <h4>Ver más</h4>
               </a>
@@ -156,6 +187,19 @@
           </center>
           <center>
           
+          <div data-role="main" class="iu-content">
+          <h3>Madre Tierra</h3>
+          <br>
+          <img src="imagenes/Madre_Tierra13.jpg" width="60%" height="70%" alt=""/><br>  
+           <p>"Madre Tierra" es una expresión común utilizada para referirse al planeta Tierra en diversos países y regiones, lo que demuestra la interdependencia existente entre los seres humanos, las demás especies vivas y el planeta que todos habitamos.<br>
+
+La Tierra y sus ecosistemas son nuestro hogar. Para alcanzar un justo equilibrio entre las necesidades económicas, sociales y ambientales de las generaciones presentes y futuras, es necesario promover la armonía con la naturaleza y el planeta.<br>
+
+Celebramos el Día Internacional de la Madre Tierra para recordar que el planeta y sus ecosistemas nos dan la vida y el sustento. Con este día, asumimos, además, la responsabilidad colectiva, como nos recordaba la Declaración de Río de 1992, de fomentar esta armonía con la naturaleza y la Madre Tierra.<br>
+
+Este día nos brinda también la oportunidad de concienciar a todos los habitantes del planeta acerca de los problemas que afectan a la Tierra y a las diferentes formas de vida que en él se desarrollan.<br>
+ </p>
+           </div>
            
            <div data-role="main" class="ui-content" align="center">
            <div style="width:30%;">
@@ -181,6 +225,25 @@
            <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
            <h1>La Tierra que habitamos</h1>
            </div>
+           <center>
+           <div data-role="main" class="iu-content" align="center">  
+           <h2>Esta tierra que habitamos</h2>
+           <p>
+           Volvieron a ver su tierra después de muchos años en el exilio. La curva del camino, ya reconocida hace tiempo, les indicó que estaban cerca de la parcela en donde alguna vez fueron felices. Manuel acarició la cabeza su hijo mientras miraba los ojos melancólicos de Martha, tratando de contagiarle esa esperanza que hoy sin embargo se dibujaba solo como una promesa. Caminaban lentamente como buscando desandar los pasos que la violencia les había obligado a dar abandonando todo lo que poseían.<br>
+<br>
+Hacía ya un año que la guerra había terminado. La paz se firmó entre los aplausos de unos y la indiferencia y el escepticismo de otros. El perdón y el olvido se impusieron por decreto. Se habló mucho de víctimas y de reparación. Miles de hombres y mujeres colmaron las oficinas del gobierno buscando que el Estado les reconociera sus muertos y les devolvieran la tierra que hacía mucho tiempo los poderosos les habían arrebatad.<br>
+<br>
+- Desde aquí ya queda poco para el rancho. Lo primero será acomodar la cerca, yo me acuerdo que antes se nos metían mucho los animales del compadre José y nos dañaban las matas.
+<br>
+<br>
+
+          </p>
+          <img src="imagenes/Madre_Tierra14.jpg" width="60%" height="70%" alt=""/>
+           </div>
+           </center>
+           
+
+           
            <div data-role="main" class="ui-content" align="center">
            <div style="width:30%;">
            <ul data-role="controlgroup" data-type="vertical" data-theme="a">
@@ -206,6 +269,18 @@
            <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
            <h1>Dialogo sobre armonia con la naturaleza</h1>
            </div>
+           <center>
+           <div data-role="main" class="iu-content" align="center">  
+           <h2>Dialogo sobre Armonía con la Naturaleza en las Naciones Unidas</h2>
+           <p>
+           El 23 de abril de 2018 se realizó en la sede de las Naciones Unidas en Nueva York, el 8° Diálogo Interactivo sobre Armonía con la Naturaleza, en ocasión de la conmemoración del Día Internacional de la Madre Tierra.
+<br>
+<br>
+El evento fue convenido por el Presidente de la Asamblea General, Miroslav Lajcak, quien destacó la importancia del Diálogo para intercambiar ideas sobre desarrollo y patrones de producción y consumo sostenibles en armonía con la naturaleza.
+           </p>
+          <img src="imagenes/Madre_Tierra15.jpg" width="60%" height="70%" alt=""/>
+           </div>
+           </center>
            <div data-role="main" class="ui-content" align="center">
            <div style="width:30%;">
            <ul data-role="controlgroup" data-type="vertical" data-theme="a">
@@ -231,6 +306,30 @@
            <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
            <h1>Hacia una tierra sostenible</h1>
            </div>
+           <center>
+           <div data-role="main" class="iu-content" align="center">  
+           <h2>Propuestas para una Tierra Sostenible</h2>
+           <p>El paquete de medidas estratégicas diseñado por el quinteto de organizaciones ecologistas está compuesto por 17 demandas que abarcan medidas transversales que trascienden el medioambiente y van más allá con el fin de facilitar la transformación de todo el sistema.<br>
+           <br>
+En concreto, tal y como anunciaron los responsables de estas ONG durante la presentación de Un programa por la Tierra. Demandas para una legislatura sostenible, lo que defienden con estas 17 propuestas es lograr que la «sostenibilidad del modelo económico, las políticas centradas en la justicia social y ambiental y las medidas para generar un nuevo modelo de producción y consumo, con generación de empleo ligado al cuidado y mejora ambiental» marquen el camino en la nueva etapa política.<br>
+<br>
+De forma resumida, estas son las 17 demandas:
+</p>
+<ul>
+<li>1.ª Crear una Vicepresidencia de Sostenibilidad y Ministerio de Medio Ambiente.</li>
+<li>2.ª Reforzar la Fiscalía Coordinadora de Medio Ambiente y Urbanismo y dotarla de más medios.</li>
+<li>3.ª Reconocer y reforzar el papel de las organizaciones ambientales.</li>
+<li>4.ª Establecer una Ley de Fiscalidad Ambiental que redistribuya la carga fiscal primando las buenas prácticas que promuevan el ahorro, la restauración ambiental y la creación de empleo ligado al medio ambiente.
+</li>
+<li>5.ª Poner en marcha un plan ambicioso de mejora de la calidad del aire de ámbito estatal.</li>
+<li>6.ª Prohibir de manera urgente el Bisfenol-A y otros disruptores endocrinos.</li>
+<li>7.ª Prohibir el uso y abuso de animales con fines lúdicos o publicitarios a través de una Ley de Protección Animal.
+</li>
+<li>8.ª Aprobar una Ley de Cambio Climático.</li>
+<p>...</p>
+          <img src="imagenes/Madre_Tierra16.jpg" width="60%" height="70%" alt=""/>
+           </div>
+           </center>
            <div data-role="main" align="center">
            <div style="width:30%;">
              <div data-role="controlgroup" data-type="vertical" data-theme="a">
@@ -251,8 +350,8 @@
              </div>
              </div>
              
-             
           
 </body>
                   </html>
                   
+        
